@@ -188,7 +188,7 @@ label{
 /* -----------end of feature section--------- */
 
 
-
+/* -------pop-up section---------- */
 
 .pop-up {
   position: fixed;
@@ -254,4 +254,73 @@ section.active .pop-up {
     background: rgb(43, 43, 43);
 }
 
+.pop-up .cart-item img{
+    height: 50px;
+    width: 50px;
+}
+/* -------end of pop-up section---------- */
+
 /* ======mobile design====== */
+@media(max-width:375px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .mob-none{
+        display: none;
+    }
+    .product-description{
+        margin-top: -8rem;
+        margin-left: 0.5rem;
+       margin-right: 0.5rem;
+    }
+    .product-description #quantity .decre, .incre{
+        margin: 0 0.3rem;
+    }
+    .product-description .material{
+        margin: 0.5rem 0;
+        font-size: 12px;
+    }
+    .custom-fit div{
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .custom-fit h3{
+        margin: 0 3rem;
+        line-height: 27px;
+    }
+    .custom-fit p{
+        margin: 1.5rem 10%;
+    }
+    
+    .custom-fit button{
+       background-color: rgb(219, 219, 219);
+       padding: 0.9rem 1.5rem;
+       text-transform: uppercase;
+       font-size: 10px;
+       font-weight: bold;
+    }
+    .feature-section h6{
+        font-size: 15px;
+    }
+    .feature-section img{
+        width: 250px;
+        height: 250px;
+    }
+    .feature-pro .pro-container{
+        margin-right: 0.7rem;
+    }
+    .feature-pro .pro-container h5{
+        font-weight:500;
+    }
+    .feature-pro .pro-container p{
+        font-size: 10px;
+        width: 250px;
+    }
+
+}
