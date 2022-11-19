@@ -56,7 +56,9 @@ small{
     margin: 1.5rem 0;
     font-weight: 400;
 }
-
+label{
+    font-weight: 500;
+}
 .product-description .color{
     margin: 1rem 0;
     border: 1px solid #dbd8d8;
@@ -75,17 +77,32 @@ small{
 
 .product-description #quantity{
     border: 1px solid black;
-    padding: 0.8rem 3rem 1rem 3rem;
-    /* height: 3rem; */
+    padding: 0.8rem 0 1rem 0;
+    margin-right: 0.6rem;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
     
 }
-#add{
+.product-description #quantity .decre, .incre{
+    color: var(--grey);
+    margin: 0 1rem;
+}
+/* .product-description #quantity .num{
+      padding: 0 2rem 0 2rem; 
+} */
+ #add{
     text-transform: uppercase;
     background: white;
     border: 1px solid black;
-    width: 76.5%;
+    width: 80%;
     height: 3rem;
     font-weight: bold;
+}
+#add:hover{
+    color: white;
+    background: #000;
+    font-weight:normal;
 }
 #buy{
     text-transform: uppercase;
@@ -166,3 +183,5 @@ small{
 }
 
 /* -----------end of feature section--------- */
+
+/* ======mobile design====== */

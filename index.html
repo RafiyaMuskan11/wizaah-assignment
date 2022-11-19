@@ -25,23 +25,45 @@
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
             electronic typesetting, remaining essentially unchanged.</p>
-        <h5>COLOR:Brown</h5>
-        <img src="Ellipse 1.png" alt="" class="color">
-        <img src="Ellipse 2.png" alt="" class="color">
-        <img src="Ellipse 3.png" alt="" class="color">
-        <img src="Ellipse 4.png" alt="" class="color">
-        <h5>SIZE:XS
-            <ul>
-                <li>XS</li>
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-            </ul>
-        </h5>
-        <span id="quantity">- 1 +</span>
-        <button id="add">add to cart</button><br>
-        <button id="buy">but it now</button><br>
+
+        <form action="">
+            <label for="color">COLOR:</label>
+            <select name="color" id="color" required>
+                <option value="Brown">Brown</option>
+                <option value="Green">Green</option>
+                <option value="Purple">Purple</option>
+                <option value="Blue">Blue</option>
+            </select><br>
+            <img src="Ellipse 1.png" alt="" class="color red">
+            <img src="Ellipse 2.png" alt="" class="color green">
+            <img src="Ellipse 3.png" alt="" class="color purple">
+            <img src="Ellipse 4.png" alt="" class="color blue"><br>
+
+            <label for="size">SIZE:</label>
+            <select name="size" id="size" required>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <h5>
+                <ul>
+                    <li>XS</li>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                </ul>
+            </h5>
+            <span id="quantity">
+                <span class="decre">-</span>
+                <span class="num">1</span>
+                <span class="incre">+</span>
+            </span>
+            <button id="add">add to cart</button><br>
+            <button id="buy">but it now</button><br>
+        </form>
         <div class="material">
             <span><img src="Vector.png" alt=""> Materials</span>
             <span><img src="Group.png" alt=""> Shipping & Returns</span>
@@ -50,12 +72,14 @@
     </div>
     <div class="custom-fit">
         <div>
-        <h3>THE PERFECT FIT OR YOUR MONEY BACK</h3>
-        <p> We understand that creating your custom size can feel daunting. But not to worry, it's actually quite easy
-            and completely risk-free. If you're not 100% happy with your fit, we'll remake your first shirt from scratch
-            free of charge or give your money back.</p>
-        <button>create your design</button>
-    </div>
+            <h3>THE PERFECT FIT OR YOUR MONEY BACK</h3>
+            <p> We understand that creating your custom size can feel daunting. But not to worry, it's actually quite
+                easy
+                and completely risk-free. If you're not 100% happy with your fit, we'll remake your first shirt from
+                scratch
+                free of charge or give your money back.</p>
+            <button>create your design</button>
+        </div>
     </div>
     <div class="feature-section">
         <h6>product features</h6>
@@ -84,6 +108,9 @@
             </div>
         </div>
     </div>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>
