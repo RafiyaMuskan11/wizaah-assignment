@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wizaah assignment</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
 </head>
 
 <body>
@@ -55,15 +57,15 @@
                     <li>L</li>
                     <li>XL</li>
                 </ul>
-            </h5>
+            </h5></form>
             <span id="quantity">
                 <span class="decre">-</span>
                 <span class="num">1</span>
                 <span class="incre">+</span>
             </span>
-            <button id="add">add to cart</button><br>
+            <button id="add" class="add">add to cart</button><br>
             <button id="buy">but it now</button><br>
-        </form>
+        
         <div class="material">
             <span><img src="Vector.png" alt=""> Materials</span>
             <span><img src="Group.png" alt=""> Shipping & Returns</span>
@@ -108,7 +110,23 @@
             </div>
         </div>
     </div>
+   
 
+    <!-- pop-up box -->
+    <section>
+      
+        <span class="overlay"></span>
+  
+        <div class="pop-up">
+          <h2>Added to Cart <i class="fa-regular fa-circle-check"></i></h2>
+  
+          <div class="buttons">
+            <button class="close-btn">Ok, Close</button>
+            <button>View Cart</button>
+          </div>
+        </div>
+      </section>
+    <!-- end of pop-up box -->
 
     <script src="index.js"></script>
 </body>

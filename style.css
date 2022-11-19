@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 :root{
     --black:#151515;
     --grey:#A3A1A1;
@@ -10,6 +12,7 @@
     box-sizing: border-box;
 }
 body{
+  position: relative;
     font-family: 'Archivo', sans-serif;
     margin: 1rem 4rem;
     display: grid;
@@ -183,5 +186,72 @@ label{
 }
 
 /* -----------end of feature section--------- */
+
+
+
+
+.pop-up {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+section.active .add {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+section.active .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: rgb(153, 153, 153);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+section.active .pop-up {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.pop-up i {
+  font-size: 25px;
+  color: rgb(53, 53, 53);
+}
+.pop-up h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+}
+.pop-up .buttons {
+  margin-top: 25px;
+}
+.pop-up button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 5px;
+  color: rgb(223, 223, 223);
+    background: rgb(43, 43, 43);
+}
 
 /* ======mobile design====== */
